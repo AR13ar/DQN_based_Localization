@@ -36,10 +36,10 @@ def mask_load(path):
             unique_id.append(uid)
     return files_id, mask, unique_id
 
-path_ad = "C:\\Users\\raj.74\\ADNI_with_MASK\\AD\\ADNI"
+path_ad = "Path to AD\\ADNI"
 all_files_ad_id, mask_ad, ad_unique_id = mask_load(path_ad)
 
-path_cn = "C:\\Users\\raj.74\\ADNI_with_MASK\\CN\\ADNI"
+path_cn = "Path to \\CN\\ADNI"
 all_files_cn_id, mask_cn, cn_unique_id = mask_load(path_cn)
 
 
