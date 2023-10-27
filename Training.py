@@ -17,16 +17,6 @@ import math
 from tqdm import tqdm
 import numpy as np
 
-def binary_acc(y_pred, y_test):
-    #y_pred[y_pred >= 0.5] = 1 
-    #y_pred[y_pred < 0.5] = 0
-    _, y_pred = y_pred.max(1)
-    correct_results_sum = (y_pred == y_test).sum().float()
-    acc = correct_results_sum#/y_test.shape[0]
-    acc = torch.round(acc)
-
-    return acc
-
 def training_phase(dqn_model, classifier_model, dataloader, criterion, optimizer):
     training_acc = []
     training_loss = []
